@@ -1,1 +1,13 @@
 # This file contains recursive sources that require this package
+R-CVST
+R-DRR
+R-DendSer
+R-caret
+R-clue
+R-dendextend
+R-dimRed
+R-fpc
+R-mvoutlier
+R-recipes
+R-robCompositions
+R-seriation
