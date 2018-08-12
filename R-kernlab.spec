@@ -4,7 +4,7 @@
 #
 Name     : R-kernlab
 Version  : 0.9.27
-Release  : 15
+Release  : 16
 URL      : https://cran.r-project.org/src/contrib/kernlab_0.9-27.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/kernlab_0.9-27.tar.gz
 Summary  : Kernel-Based Machine Learning Lab
@@ -35,11 +35,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534096430
+export SOURCE_DATE_EPOCH=1534097628
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1534096430
+export SOURCE_DATE_EPOCH=1534097628
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
