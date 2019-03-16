@@ -4,13 +4,13 @@
 #
 Name     : R-kernlab
 Version  : 0.9.27
-Release  : 19
+Release  : 20
 URL      : https://cran.r-project.org/src/contrib/kernlab_0.9-27.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/kernlab_0.9-27.tar.gz
 Summary  : Kernel-Based Machine Learning Lab
 Group    : Development/Tools
 License  : GPL-2.0
-Requires: R-kernlab-lib
+Requires: R-kernlab-lib = %{version}-%{release}
 BuildRequires : buildreq-R
 
 %description
@@ -35,11 +35,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1534097628
+export SOURCE_DATE_EPOCH=1552772618
 
 %install
+export SOURCE_DATE_EPOCH=1552772618
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1534097628
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -74,8 +74,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library kernlab|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
+R CMD check --no-manual --no-examples --no-codoc  kernlab || :
 
 
 %files
@@ -114,7 +113,6 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || :
 /usr/lib64/R/library/kernlab/help/paths.rds
 /usr/lib64/R/library/kernlab/html/00Index.html
 /usr/lib64/R/library/kernlab/html/R.css
-/usr/lib64/R/library/kernlab/libs/symbols.rds
 
 %files lib
 %defattr(-,root,root,-)
