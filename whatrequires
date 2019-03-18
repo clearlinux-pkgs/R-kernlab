@@ -1,6 +1,8 @@
 # This file contains recursive sources that require this package
 R-CVST
 R-DRR
+R-DendSer
+R-dendextend
 R-fpc
 R-ks
 R-robCompositions
