@@ -4,7 +4,7 @@
 #
 Name     : R-kernlab
 Version  : 0.9.29
-Release  : 36
+Release  : 37
 URL      : https://cran.r-project.org/src/contrib/kernlab_0.9-29.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/kernlab_0.9-29.tar.gz
 Summary  : Kernel-Based Machine Learning Lab
