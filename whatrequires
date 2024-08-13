@@ -1,6 +1,7 @@
 # This file contains recursive sources that require this package
 R-CVST
 R-DRR
+R-dials
 R-fpc
 R-ks
 R-mixtools
